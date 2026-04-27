@@ -1,13 +1,22 @@
 ﻿namespace Example;
 
-static class Program
+class Program
 {
     static void Main(string[] args)
     {
-     Console.Write("文字列を入力してください->");
-
-    //変数sにユーザーが入力した値を格納し表示
-    string s = Console.ReadLine();
-    Console.WriteLine(s);
+        bool a = true, b = false;
+Console.WriteLine($"a && a = {a && a}");
+Console.WriteLine($"a && b = {a && b}");
+Console.WriteLine($"b && a = {b && a}");
+Console.WriteLine($"b && b = {b && b}");
+Console.WriteLine($"a || a = {a || a}");
+Console.WriteLine($"a || b = {a || b}");
+Console.WriteLine($"b || a = {b || a}");
+Console.WriteLine($"b || b = {b || b}");
+int x = 1;
+Console.WriteLine($"b && x++ > 1 = {b && x++ > 1}");
+Console.WriteLine($"x = {x}");
+Console.WriteLine($"b & x++ > 1 = {b & x++ > 1}");
+Console.WriteLine($"x = {x}");
     }
 }

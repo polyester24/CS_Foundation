@@ -10,9 +10,9 @@ class Program
         number = int.Parse(num);
         int result;
 
-        if(number % 2 == 1)
+        if (number % 2 == 1)
         {
-            result =  number;
+            result = number;
             Console.WriteLine($"結果:{result}");
         }
         else

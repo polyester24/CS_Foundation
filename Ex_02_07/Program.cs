@@ -9,11 +9,11 @@ class Program
         int number;
         number = int.Parse(num);
 
-        if(number > 0)
+        if (number > 0)
         {
             Console.WriteLine("正の値です。");
         }
-        else if(number < 0)
+        else if (number < 0)
         {
             Console.WriteLine("負の値です。");
         }

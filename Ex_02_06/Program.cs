@@ -9,7 +9,7 @@ class Program
         int number;
         number = int.Parse(num);
 
-        if(number % 4 == 0)
+        if (number % 4 == 0)
         {
             Console.WriteLine("4の倍数です。");
         }

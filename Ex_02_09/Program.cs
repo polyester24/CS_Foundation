@@ -1,15 +1,14 @@
-﻿namespace Ex_02_08;
+﻿namespace Ex_02_09;
 
 class Program
 {
     static void Main(string[] args)
     {
         string[] station = { "品川", "大崎", "五反田", "目黒", "恵比寿", "渋谷", "原宿", "代々木", "新宿" };
-        int i = 0;
-        while (i < station.Length)
+        for (int i = 0; i < station.Length; i++)
         {
             Console.WriteLine(station[i]);
-            i++;
         }
+
     }
 }

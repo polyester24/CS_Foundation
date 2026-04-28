@@ -4,19 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        bool a = true, b = false;
-Console.WriteLine($"a && a = {a && a}");
-Console.WriteLine($"a && b = {a && b}");
-Console.WriteLine($"b && a = {b && a}");
-Console.WriteLine($"b && b = {b && b}");
-Console.WriteLine($"a || a = {a || a}");
-Console.WriteLine($"a || b = {a || b}");
-Console.WriteLine($"b || a = {b || a}");
-Console.WriteLine($"b || b = {b || b}");
-int x = 1;
-Console.WriteLine($"b && x++ > 1 = {b && x++ > 1}");
-Console.WriteLine($"x = {x}");
-Console.WriteLine($"b & x++ > 1 = {b & x++ > 1}");
-Console.WriteLine($"x = {x}");
+        var count = 1;
+        while (count < 8)
+        {
+            count *= 2;
+            Console.WriteLine($"count *= {count}");
+        }
     }
 }

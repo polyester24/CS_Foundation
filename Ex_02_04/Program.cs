@@ -4,7 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        string[] number;
         var numbers = new string [3];
 
         Console.Write("数値を入力してください->");

@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Console.Write("数値を入力してください->");
-        var num = Console.ReadLine();
+        var num = Console.ReadLine()!;
         int number;
         number = int.Parse(num);
         int result;

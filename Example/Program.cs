@@ -4,11 +4,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        var count = 1;
-        while (count < 8)
-        {
-            count *= 2;
-            Console.WriteLine($"count *= {count}");
-        }
+
+        Warrior warrior = new("ユータ", 15);
+        Console.WriteLine(warrior.name);
+        Console.WriteLine(warrior.hp);
+
+        Warrior warrior2 = new("gm");
+        Console.WriteLine(warrior2.hp);
+        Console.WriteLine(warrior2.name);
+        warrior2.hp = 8;
+        Console.WriteLine(warrior2.hp);
+
     }
+
 }

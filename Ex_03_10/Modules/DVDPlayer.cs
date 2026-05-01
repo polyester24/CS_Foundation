@@ -10,7 +10,7 @@ namespace Ex_03_10.Modules
         public DVDPlayer(string Media)
         : base(Media)
         {
-            this.Media = Media;
+
         }
 
         public override void Play()

@@ -5,9 +5,9 @@ static class Program
 {
     static void Main(string[] args)
     {
-        var mouse = new Mouse();
-        var display = new Display();
-        var flashMemory = new FlashMemory();
+        IUSB mouse = new Mouse();
+        IUSB display = new Display();
+        IUSB flashMemory = new FlashMemory();
 
         flashMemory.SendData();
         flashMemory.ReciveData();

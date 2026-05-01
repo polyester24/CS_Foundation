@@ -1,17 +1,22 @@
-﻿namespace Example;
-
-class Program
+﻿try
 {
-    static void Main(string[] args)
-    {
-
-        Warrior warrior = new Warrior();
-
-        warrior.name = "ユータ";
-        warrior.hp = 10;// 別なクラスから見えないのでコンパイルエラーになる
-
-        warrior.Greet1();
-        warrior.Greet2();// 別なクラスから見えないのでコンパイルエラーになる
-    }
-
+  int[] vals = { 2, 3 };
+  ArrayCalc arrayCalc = new ArrayCalc();
+  var sum = arrayCalc.Summarize(vals);
+  Console.WriteLine($"合計={0}", sum);
+}
+catch (IndexOutOfRangeException e)
+{
+  Console.WriteLine(e.Message);
+  Console.WriteLine("配列の誤ったアクセスによる例外");
+}
+catch (NullReferenceException e)
+{
+  Console.WriteLine(e.Message);
+  Console.WriteLine("値がNullの変数利用による例外");
+}
+catch (Exception e)
+{
+  Console.WriteLine(e.Message);
+  Console.WriteLine("その他の例外");
 }
